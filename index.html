@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sudhiksha 💖</title>
+    <meta name="description" content="A special birthday surprise.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Startup Animation (Gift Box) -->
+    <div id="loading-screen">
+        <div class="unboxing-container">
+            <div id="gift-box" class="gift-box">
+                <div class="box-lid"></div>
+                <div class="box-body">
+                    <div class="box-ribbon"></div>
+                </div>
+            </div>
+            <p class="tap-text">Tap to open your surprise... 🎁</p>
+        </div>
+        <div id="confetti-launcher"></div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Background Elements -->
+    <div class="pastel-bg"></div>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="fullscreen-section">
+        <div class="floating-balloons" id="balloons-container"></div>
+        <div class="hero-content">
+            <h1 class="glow-text title-anim">Happy Birthday<br>Sudhiksha 🎂🎀</h1>
+            <p class="subtext fade-in-delay">To the most precious person...</p>
+            <button id="enter-btn" class="glow-btn">Click to enter ✨</button>
+        </div>
+    </section>
+
+    <!-- Friendship Timer Section -->
+    <section id="timer-section" class="section hidden-scroll">
+        <h2 class="section-title glow-text">Time Since You Came Into My Life...</h2>
+        <div class="timer-container glass-card">
+            <div class="timer-box">
+                <span id="years">00</span>
+                <p>Years</p>
+            </div>
+            <div class="timer-box">
+                <span id="months">00</span>
+                <p>Months</p>
+            </div>
+            <div class="timer-box">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="timer-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="timer-box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="timer-box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Section (Masonry Grid) -->
+    <section id="memory" class="section hidden-scroll">
+        <h2 class="section-title glow-text">Our Beautiful Memories 📸</h2>
+        <div class="masonry-grid">
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.20.02 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.20.02 PM (2).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.20.02 PM.jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.20.03 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.20.03 PM.jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.36 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.36 PM.jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.37 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.37 PM (2).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.37 PM.jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.38 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.38 PM (2).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.26.38 PM.jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.34.33 PM (1).jpeg" alt="Memory"></div>
+            <div class="masonry-item"><img src="images/WhatsApp Image 2026-04-25 at 8.34.33 PM.jpeg" alt="Memory"></div>
+        </div>
+    </section>
+
+    <!-- Reasons Why Cards Section -->
+    <section id="reasons" class="section hidden-scroll">
+        <h2 class="section-title glow-text">Reasons Why You're Special 💝</h2>
+        <div class="cards-container">
+            <div class="card-stack" id="card-stack">
+                <!-- Cards will be injected via JS -->
+            </div>
+            <p class="card-hint">Click the card to see the next one...</p>
+        </div>
+    </section>
+
+    <!-- Hidden Notes Scattered around -->
+    <div class="hidden-note" id="note-1" data-message="You are my first and best college memory. 🎓">🎀</div>
+    <div class="hidden-note" id="note-2" data-message="I cherish every cafe date we have. ☕">🎀</div>
+    <div class="hidden-note" id="note-3" data-message="Thank you for always being my biggest supporter. ❤️">🎀</div>
+
+    <!-- Emotional Message Section -->
+    <section id="message" class="section hidden-scroll">
+        <div class="message-bg-images">
+            <img src="images/GVMC5678.JPG" class="bg-img-1">
+            <img src="images/WhatsApp Image 2026-04-25 at 8.26.36 PM.jpeg" class="bg-img-2">
+            <img src="images/WhatsApp Image 2026-04-25 at 8.34.33 PM.jpeg" class="bg-img-3">
+        </div>
+        <div class="glass-card">
+            <div id="typewriter-container" class="typewriter-text"></div>
+        </div>
+    </section>
+
+    <!-- Special Quote Section -->
+    <section id="quote" class="section hidden-scroll">
+        <div class="quote-container glow-border">
+            <blockquote>
+                "Some people come into life and change everything...<br>you're that person. 💖"
+            </blockquote>
+        </div>
+    </section>
+
+
+    <!-- Music Player -->
+    <div id="music-player" class="music-player">
+        <div class="record-container">
+            <div class="record" id="record-disk">
+                <div class="record-center"></div>
+            </div>
+        </div>
+        <p class="music-info">Click to play soft music 🎵</p>
+        <audio id="bg-music" loop>
+            <source src="ytmp3free.cc_happy-birthday-song-the-best-birthday-celebration-video-youtubemp3free.org.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Final Celebration Section -->
+    <section id="final-celebration" class="section hidden-scroll">
+        <h1 class="glow-text massive-text title-anim">Happy Birthday Sudhiksha! 🎂</h1>
+        <canvas id="fireworks-canvas"></canvas>
+    </section>
+
+    <!-- Photo Lightbox Modal -->
+    <div id="lightbox" class="lightbox-hidden">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Hidden Note Modal -->
+    <div id="note-modal" class="modal-hidden">
+        <div class="note-paper">
+            <span class="close-note">&times;</span>
+            <div class="note-icon">💌</div>
+            <p id="note-text"></p>
+        </div>
+    </div>
+
+    <!-- Interactive Rose Petals -->
+    <div id="petals-container"></div>
+
+    <!-- Final Sealed Letter Section -->
+    <section id="final-letter-section" class="section hidden-scroll">
+        <h2 class="section-title glow-text">One Final Surprise... 💌</h2>
+        <div class="envelope-wrapper" id="envelope-trigger">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+                <div class="wax-seal">❤️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Letter Modal -->
+    <div id="full-letter-modal" class="modal-hidden">
+        <div class="letter-paper">
+            <span class="close-final-letter">&times;</span>
+            <div class="letter-content">
+                <h2>Dear Sudhiksha,</h2>
+                <p>On this beautiful day, I want to wish you a very Happy Birthday! You are an amazing person who brings so much light and joy into the lives of everyone around you. You deserve all the happiness, success, and love that this world has to offer.</p>
+                <p>I hope your special day is filled with countless smiles, wonderful surprises, and beautiful moments that you'll cherish forever. May this new year of your life bring you closer to all your dreams and fill your heart with peace and joy.</p>
+                <p>Thank you for being who you are. Have the most wonderful birthday celebration ever! Happy Birthday, Sudhiksha! ✨</p>
+                <p>With all my love,</p>
+                <p class="signature">Omyy</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
