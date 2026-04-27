@@ -297,7 +297,9 @@ body {
 /* Masonry Gallery Section */
 .masonry-grid {
     column-count: 3;
+    -webkit-column-count: 3;
     column-gap: 20px;
+    -webkit-column-gap: 20px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -477,7 +479,10 @@ blockquote {
     }
     .title-anim { font-size: 3.5rem; }
     .subtext { font-size: 1.2rem; }
-    .masonry-grid { column-count: 1; }
+    .masonry-grid { 
+        column-count: 1; 
+        -webkit-column-count: 1;
+    }
     blockquote { font-size: 2.5rem; }
     .massive-text { font-size: 4rem; }
     #cursor-glow { display: none; }
